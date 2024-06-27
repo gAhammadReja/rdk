@@ -1,0 +1,98 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    z-index: 3;
+
+}
+html,body{
+    font-size: 15px;
+    font-family:Arial, Helvetica, sans-serif;
+}
+@media screen and (max-width: 1200px) {   
+html,body{
+    font-size: 14px;
+}
+}
+@media screen and (max-width: 780px) {   
+html,body{
+    font-size: 12px;
+}
+    
+}
+@media screen and (max-width: 480px) {   
+html,body{
+    font-size: 11px;
+}
+}
+:root{
+    --primary: red;
+    --secondary:rgb(82, 29, 254);
+}
+.primary{
+    color: red;
+}
+.p10{
+    padding: 1rem;
+}
+.p20{
+    padding: 2rem;
+}
+.p5{
+    padding: 0.5rem;
+}
+.larger{
+font-size: 1.5rem;
+}
+.bold{
+    font-weight: 700;
+}
+a{
+    text-decoration: none;
+}
+.pointer:hover{
+    cursor: pointer;
+    text-decoration: underline;
+}
+.btn{
+    padding: 0.3rem .6rem;
+    cursor: pointer;
+    box-shadow: -2px -2px 2px rgb(51, 2, 98) inset;
+    width: fit-content;
+    height: fit-content;
+    font-weight: 600;
+    border-radius: 0.4rem;
+    margin: 1px;
+}
+.btn:hover{
+    box-shadow: 2px 2px 2px rgb(51, 2, 98);
+    
+}
+.btn-ok{
+    background-color: rgb(89, 38, 255);
+    color: white;
+}.btn-danger{
+    background-color: rgb(255, 38, 56);
+    color: white;
+}
+/* display */
+.flex{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+::-webkit-scrollbar{
+    background-color: var(--secondary);
+    width: 0.8rem;
+}
+::-webkit-scrollbar-thumb{
+    border: 2px solid var(--secondary);
+    background-color: var(--primary);
+    border-radius: 5px;
+    cursor:grab;
+}
+
+.overflow-y{
+    overflow-y: scroll;
+}
